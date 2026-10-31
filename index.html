@@ -27,7 +27,7 @@ h1{margin:0;font-size:clamp(30px,4vw,43px);line-height:1.1;letter-spacing:-1.6px
 .search input{width:100%;height:42px;padding:0 42px;border:1px solid #fff;border-radius:99px;outline:0;background:#fffffff0;color:var(--ink);font-size:12px;box-shadow:0 7px 20px #22456e1f;transition:box-shadow .2s,border-color .2s}
 .search input::placeholder{color:#91a0b7}.search input:focus{border-color:#9dc8ff;box-shadow:0 0 0 4px #3284f121,0 8px 22px #22456e1f}
 .clear{display:none;position:absolute;right:12px;top:50%;transform:translateY(-50%);width:25px;height:25px;border:0;border-radius:50%;background:transparent;color:#61748e;font-size:18px;cursor:pointer}.clear.visible{display:grid;place-items:center}.clear:hover{background:#edf4ff}
-.panel{position:relative;margin-top:-1px;padding:0 20px 22px;border:1px solid #fff;border-top:0;border-radius:0 0 24px 24px;background:#f8fcffc9;backdrop-filter:blur(22px);box-shadow:0 15px 35px #2c538414}
+.panel{position:relative;margin-top:-1px;padding:22px 20px 22px;border:1px solid #fff;border-top:0;border-radius:0 0 24px 24px;background:#f8fcffc9;backdrop-filter:blur(22px);box-shadow:0 15px 35px #2c538414}
 .grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
 .card{--accent:#3288f4;--rgb:50,136,244;position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:column;min-height:194px;padding:17px 13px 14px;text-align:center;border:1px solid #dceafa;border-radius:18px;background:linear-gradient(150deg,#fffffff7,#f6faffeb);box-shadow:0 5px 14px #325b8e0e,inset 0 1px 0 #fff;transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease}
 .card:before{content:"";position:absolute;z-index:-1;inset:-1px;padding:1.5px;border-radius:inherit;background:conic-gradient(from var(--angle,0deg),transparent 0 55%,rgba(var(--rgb),.98) 68%,#8fc5ffe6 77%,transparent 88% 100%);opacity:0;transition:opacity .2s;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
@@ -44,7 +44,7 @@ h1{margin:0;font-size:clamp(30px,4vw,43px);line-height:1.1;letter-spacing:-1.6px
 .empty{display:none;padding:35px 12px;text-align:center;color:var(--muted);font-size:13px}.empty.visible{display:block}[hidden]{display:none!important}
 footer{display:flex;justify-content:space-between;gap:15px;padding:18px 4px 0;color:#8192a9;font-size:10px}footer strong{color:#506783;letter-spacing:.8px}
 @media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.hero{min-height:225px}.card{min-height:188px}}
-@media(max-width:620px){.page{padding:8px 10px 18px}.hero{min-height:225px;padding:11px 12px 47px;border-radius:20px 20px 0 0;background-position:center}.pill{padding:7px 10px;font-size:9px}.user{gap:6px;padding-right:8px;font-size:10px}.avatar{width:25px;height:25px}.hero-content{margin-top:23px}h1{font-size:clamp(28px,7.5vw,36px);letter-spacing:-1.2px}.subtitle{margin:7px 0 14px;font-size:12px}.search input{height:40px;font-size:11px}.panel{padding:0 10px 14px;border-radius:0 0 20px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{min-height:174px;padding:14px 9px 11px;border-radius:16px}.icon{width:43px;height:43px;margin-bottom:9px;border-radius:13px}.icon svg{width:22px;height:22px}.card h2{font-size:12px}.card p{font-size:10px}.arrow{width:23px;height:23px}footer{flex-direction:column;gap:7px;padding-top:14px}}
+@media(max-width:620px){.page{padding:8px 10px 18px}.hero{min-height:225px;padding:11px 12px 47px;border-radius:20px 20px 0 0;background-position:center}.pill{padding:7px 10px;font-size:9px}.user{gap:6px;padding-right:8px;font-size:10px}.avatar{width:25px;height:25px}.hero-content{margin-top:23px}h1{font-size:clamp(28px,7.5vw,36px);letter-spacing:-1.2px}.subtitle{margin:7px 0 14px;font-size:12px}.search input{height:40px;font-size:11px}.panel{padding:14px 10px 14px;border-radius:0 0 20px 20px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{min-height:174px;padding:14px 9px 11px;border-radius:16px}.icon{width:43px;height:43px;margin-bottom:9px;border-radius:13px}.icon svg{width:22px;height:22px}.card h2{font-size:12px}.card p{font-size:10px}.arrow{width:23px;height:23px}footer{flex-direction:column;gap:7px;padding-top:14px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -52,7 +52,7 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:18px 4px 0;co
 <main class="page">
 <header class="hero">
   <div class="topline">
-    <span class="pill">✦ &nbsp; A. Modern Dashboard <span style="opacity:.8">(Recommended)</span></span>
+    
     <div class="user"><span class="avatar">CP</span><span>CPVN Team</span><span aria-hidden="true">⌄</span></div>
   </div>
   <div class="hero-content">
@@ -98,6 +98,38 @@ footer{display:flex;justify-content:space-between;gap:15px;padding:18px 4px 0;co
   <a class="card slate" href="#" data-placeholder="true" data-search="admin tools system settings administration">
     <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m10 2-.5 2.1a8 8 0 0 0-1.8.8L5.8 4 4 5.8l.9 1.9a8 8 0 0 0-.8 1.8L2 10v2l2.1.5a8 8 0 0 0 .8 1.8L4 16.2 5.8 18l1.9-.9a8 8 0 0 0 1.8.8L10 20h2l.5-2.1a8 8 0 0 0 1.8-.8l1.9.9 1.8-1.8-.9-1.9a8 8 0 0 0 .8-1.8L20 12v-2l-2.1-.5a8 8 0 0 0-.8-1.8l.9-1.9L16.2 4l-1.9.9a8 8 0 0 0-1.8-.8L12 2h-2Z" transform="translate(1 1) scale(.9)"></path><circle cx="12" cy="12" r="3"></circle></svg></span>
     <h2>Admin Tools</h2><p>System settings and administration</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card teal" href="#" data-placeholder="true" data-search="sap center support sap requests">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"></path><path d="M8 8h8M8 12h5M8 16h8"></path></svg></span>
+    <h2>SAP Center Support</h2><p>Submit and track SAP-related requests</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card purple" href="#" data-placeholder="true" data-search="jv request journal voucher accounting">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"></path><path d="M15 3v5h4M9 12h7M9 16h7"></path></svg></span>
+    <h2>JV Request</h2><p>Create and monitor journal voucher requests</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card pink" href="#" data-placeholder="true" data-search="purchase request procurement approval">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16l-1.5 13h-13z"></path><path d="M8 7a4 4 0 0 1 8 0M9 12h6"></path></svg></span>
+    <h2>Purchase Request</h2><p>Manage purchasing requests and approvals</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card sky" href="#" data-placeholder="true" data-search="finance dashboard financial kpi">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h17"></path><path d="m7 15 4-4 3 2 5-6"></path><path d="M16 7h3v3"></path></svg></span>
+    <h2>Finance Dashboard</h2><p>Explore finance KPIs and performance</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card orange" href="#" data-placeholder="true" data-search="exchange rates currency foreign exchange">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 8h15l-3-3M20 16H5l3 3"></path><path d="M8 5 5 8l3 3M16 13l3 3-3 3"></path></svg></span>
+    <h2>Exchange Rates</h2><p>View daily currency exchange rates</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card green" href="#" data-placeholder="true" data-search="data quality validation monitoring">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 8 3v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6z"></path><path d="m8.5 12 2.3 2.3 4.8-5"></path></svg></span>
+    <h2>Data Quality</h2><p>Review data checks and validation results</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card slate" href="#" data-placeholder="true" data-search="workflow monitor automation run history">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2"></circle><circle cx="18" cy="18" r="2"></circle><circle cx="18" cy="6" r="2"></circle><path d="M8 6h8M18 8v8M6 8v10h10"></path></svg></span>
+    <h2>Workflow Monitor</h2><p>Check automation status and run history</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
+  </a>
+  <a class="card purple" href="#" data-placeholder="true" data-search="document center files policies templates">
+    <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z"></path><path d="M14 3v5h4M9 12h6M9 16h6"></path></svg></span>
+    <h2>Document Center</h2><p>Find shared documents and templates</p><span class="bottom"><span class="arrow"><svg viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"></path></svg></span></span>
   </a>
 </div>
 <div class="empty" id="empty-state" role="status">No applications found. Try another search.</div>

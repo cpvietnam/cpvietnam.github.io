@@ -5,19 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>My Task</title>
-  <script>
-    window.location.replace(
-      "https://script.google.com/macros/s/AKfycbydjJb1gEXS3qkv8HAfYT5UxmNVTgWWbyFjiApSyJXCbOtzi3RT-8FAofB0eUzIUmWGGw/exec"
-    );
-  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-  <p>Opening My Task...</p>
-  <p>
-    If the page does not open automatically,
-    <a href="https://script.google.com/macros/s/AKfycbydjJb1gEXS3qkv8HAfYT5UxmNVTgWWbyFjiApSyJXCbOtzi3RT-8FAofB0eUzIUmWGGw/exec">
-      click here
-    </a>.
-  </p>
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbydjJb1gEXS3qkv8HAfYT5UxmNVTgWWbyFjiApSyJXCbOtzi3RT-8FAofB0eUzIUmWGGw/exec"
+    title="My Task">
+  </iframe>
 </body>
 </html>
